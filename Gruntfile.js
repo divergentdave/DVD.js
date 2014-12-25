@@ -43,6 +43,18 @@ module.exports = function(grunt) {
       }
     },
 
+    // Fetch TypeScript definition files for third-party JS libraries.
+    tsd: {
+      refresh: {
+        options: {
+          command: 'reinstall',
+          latest: true,
+          overwrite: true,
+          config: './tsd.json'
+        }
+      }
+    },
+
     // Recompile to JavaScript when a file changes.
     watch: {
       client: {
@@ -63,10 +75,11 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-typescript');
+  grunt.loadNpmTasks('grunt-tsd');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('client', ['typescript:client']);
   grunt.registerTask('server', ['typescript:server']);
 
-  grunt.registerTask('default', ['client', 'server']);
+  grunt.registerTask('default', ['tsd', 'client', 'server']);
 };

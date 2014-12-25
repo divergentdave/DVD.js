@@ -21,6 +21,7 @@
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-typescript": "~0.2.7",
+    "grunt-tsd": "~0.1.0",
     "grunt-contrib-watch": "~0.5.3"
   },
   "keywords": [

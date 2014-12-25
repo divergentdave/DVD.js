@@ -1,5 +1,7 @@
 /* global Backbone, $, init, fp_pgc */
 
+/// <reference path="../references.ts" />
+
 'use strict';
 
 // A router using Backbone and jQuery to list the DVD and display a player.
