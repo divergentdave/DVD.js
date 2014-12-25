@@ -1,5 +1,9 @@
+/// <reference path="../references.ts" />
+
 'use strict';
 
+
+import jDataView = require('jdataview');
 
 import navTypes = require('../dvdread/nav_types');
 import BinaryParser = require('../lib/binaryParser/index');

@@ -8,8 +8,8 @@
 import fs = require('fs');
 import path = require('path');
 import glob = require('glob');
+import jDataView = require('jdataview');
 
-import jDataView = require('../../../public/lib/jDataView/src/jdataview.js');
 import ifoRead = require('../../dvdread/ifo_read');
 import dvdRead = require('../../dvdread/index');
 import ifoTypes = require('../../dvdread/ifo_types');

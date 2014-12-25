@@ -6,8 +6,8 @@
 import fs = require('fs');
 import path = require('path');
 import glob = require('glob');
+import jDataView = require('jdataview');
 
-import jDataView = require('../../../public/lib/jDataView/src/jdataview.js');
 import Stream = require('../../server/utils/stream');
 import decodePacket = require('../../server/utils/decode_packet');
 import navRead = require('../../dvdread/nav_read');
