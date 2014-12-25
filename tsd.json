@@ -16,6 +16,21 @@
     },
     "node/node.d.ts": {
       "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+    },
+    "jdataview/jdataview.d.ts": {
+      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+    },
+    "glob/glob.d.ts": {
+      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+    },
+    "optimist/optimist.d.ts": {
+      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+    },
+    "minimatch/minimatch.d.ts": {
+      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+    },
+    "lodash/lodash.d.ts": {
+      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
     }
   }
 }

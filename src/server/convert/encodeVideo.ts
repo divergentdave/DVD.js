@@ -1,5 +1,8 @@
 // Convert video to webm format.
 
+/// <reference path="../../references.ts" />
+/// <reference path="../../../typings/lodash/lodash.d.ts" />
+
 'use strict';
 
 

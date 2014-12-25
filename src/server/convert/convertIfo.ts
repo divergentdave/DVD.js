@@ -1,5 +1,7 @@
 // Convert IFO files and save as JSON.
 
+// <reference path="../../references.ts" />
+
 'use strict';
 
 

@@ -1,5 +1,7 @@
 // Convert a DVD to a web suitable format.
 
+/// <reference path="../references.ts" />
+
 'use strict';
 
 
