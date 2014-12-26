@@ -138,7 +138,7 @@ class VM {
   private dvd;
   public vmgi;
   public vtsi;
-  public state: DvdState = new DvdState();
+  private state: DvdState = new DvdState();
   private hop_channel: number;
   private dvd_name;
   private dvd_serial;
