@@ -2206,7 +2206,7 @@ class VM {
     // Assumes that the link_cmd enum has the same values as the LinkSIns codes
     return_values.command = linkop;
     return_values.data1 = button;
-    return cond;
+    return cond ? 1 : 0;
   }
 
   /**
@@ -2228,22 +2228,22 @@ class VM {
       case 4:
         return_values.command = link_cmd.LinkPGCN;
         return_values.data1 = this.getbits(command, 14, 15);
-        return cond;
+        return cond ? 1 : 0;
       case 5:
         return_values.command = link_cmd.LinkPTTN;
         return_values.data1 = this.getbits(command, 9, 10);
         return_values.data2 = this.getbits(command, 15, 6);
-        return cond;
+        return cond ? 1 : 0;
       case 6:
         return_values.command = link_cmd.LinkPGN;
         return_values.data1 = this.getbits(command, 6, 7);
         return_values.data2 = this.getbits(command, 15, 6);
-        return cond;
+        return cond ? 1 : 0;
       case 7:
         return_values.command = link_cmd.LinkCN;
         return_values.data1 = this.getbits(command, 7, 8);
         return_values.data2 = this.getbits(command, 15, 6);
-        return cond;
+        return cond ? 1 : 0;
     }
     return 0;
   }
@@ -2262,39 +2262,39 @@ class VM {
     switch (this.getbits(command, 51, 4)) {
       case 1:
         return_values.command = link_cmd.Exit;
-        return cond;
+        return cond ? 1 : 0;
       case 2:
         return_values.command = link_cmd.JumpTT;
         return_values.data1 = this.getbits(command, 22, 7);
-        return cond;
+        return cond ? 1 : 0;
       case 3:
         return_values.command = link_cmd.JumpVTS_TT;
         return_values.data1 = this.getbits(command, 22, 7);
-        return cond;
+        return cond ? 1 : 0;
       case 5:
         return_values.command = link_cmd.JumpVTS_PTT;
         return_values.data1 = this.getbits(command, 22, 7);
         return_values.data2 = this.getbits(command, 41, 10);
-        return cond;
+        return cond ? 1 : 0;
       case 6:
         switch (this.getbits(command, 23, 2)) {
           case 0:
             return_values.command = link_cmd.JumpSS_FP;
-            return cond;
+            return cond ? 1 : 0;
           case 1:
             return_values.command = link_cmd.JumpSS_VMGM_MENU;
             return_values.data1 = this.getbits(command, 19, 4);
-            return cond;
+            return cond ? 1 : 0;
           case 2:
             return_values.command = link_cmd.JumpSS_VTSM;
             return_values.data1 = this.getbits(command, 31, 8);
             return_values.data2 = this.getbits(command, 39, 8);
             return_values.data3 = this.getbits(command, 19, 4);
-            return cond;
+            return cond ? 1 : 0;
           case 3:
             return_values.command = link_cmd.JumpSS_VMGM_PGC;
             return_values.data1 = this.getbits(command, 46, 15);
-            return cond;
+            return cond ? 1 : 0;
         }
         break;
       case 8:
@@ -2302,22 +2302,22 @@ class VM {
           case 0:
             return_values.command = link_cmd.CallSS_FP;
             return_values.data1 = this.getbits(command, 31, 8);
-            return cond;
+            return cond ? 1 : 0;
           case 1:
             return_values.command = link_cmd.CallSS_VMGM_MENU;
             return_values.data1 = this.getbits(command, 19, 4);
             return_values.data2 = this.getbits(command, 31, 8);
-            return cond;
+            return cond ? 1 : 0;
           case 2:
             return_values.command = link_cmd.CallSS_VTSM;
             return_values.data1 = this.getbits(command, 19, 4);
             return_values.data2 = this.getbits(command, 31, 8);
-            return cond;
+            return cond ? 1 : 0;
           case 3:
             return_values.command = link_cmd.CallSS_VMGM_PGC;
             return_values.data1 = this.getbits(command, 46, 15);
             return_values.data2 = this.getbits(command, 31, 8);
-            return cond;
+            return cond ? 1 : 0;
         }
         break;
     }
