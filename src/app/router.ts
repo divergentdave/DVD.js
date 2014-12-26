@@ -8,6 +8,11 @@
 
 // A router using Backbone and jQuery to list the DVD and display a player.
 
+interface Window { dvd: Element; }
+interface vmProceduresInterface { (): void; }
+declare var init: vmProceduresInterface;
+declare var fp_pgc: vmProceduresInterface;
+
 var list = '<ul>' +
   '<% _.each(dvds, function(dvd) {%>' +
   '<li class="thumbnail" style="background-image:url(\'<%= dvd.dir %>/cover.jpg\');">' +
