@@ -6,12 +6,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     clientJSFiles: [
       'src/**/*.ts',
-      '!src/server/*.ts'
+      '!src/server/**/*.ts'
     ],
     serverJSFiles: [
       'src/dvdread/*.ts',
       'src/server/*.ts',
-      'src/utils.ts'
+      'src/utils.ts',
+      '!src/app/*.ts'
     ],
 
     typescript: {
