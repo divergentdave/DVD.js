@@ -22,12 +22,12 @@ var list = '<ul>' +
   '<% }); %>' +
   '</ul>';
 
-var App = Backbone.Router.extend({
-  routes: {
+class App extends Backbone.Router {
+  public static routes = {
     'play': 'list',
     'play/:dvdId': 'play'
-  },
-  list: function() {
+  }
+  list() {
     $.getJSON('/dvds.json')
       .done(function(data) {
         data = data.sort(function(a, b) {
@@ -35,8 +35,8 @@ var App = Backbone.Router.extend({
         });
         $('.video-container').html(_.template(list, {dvds: data}));
       });
-  },
-  play: function(dvdId) {
+  }
+  play(dvdId: string) {
     $.getJSON('/' + dvdId + '/web/metadata.json')
       .done(function(data) {
         $('.video-container').html(buildTag(data));
@@ -56,7 +56,7 @@ var App = Backbone.Router.extend({
         };
       });
   }
-});
+}
 
 Backbone.history.start();
 
