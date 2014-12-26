@@ -2500,7 +2500,7 @@ class VM {
    * @param {Link} return_values
    * @return {number}
    */
-  private eval_command(bytes: Array, return_values: Link): number {
+  private eval_command(bytes: Array<number>, return_values: Link): number {
     var registers = this.state.registers;
     var cond: boolean = false, res = 0;
     var command = new Command();
