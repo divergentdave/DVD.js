@@ -129,6 +129,11 @@ class Command {
   public registers: Registers = new Registers();
 }
 
+class TitlePart {
+  public title: number;
+  public part: number;
+}
+
 class VM {
   private dvd;
   public vmgi;
@@ -586,7 +591,7 @@ class VM {
   /**
    * @returns {Object.<string, number>}
    */
-  private get_current_title_part(): Object {
+  private get_current_title_part(): TitlePart {
     var vts_ptt_srpt;
     var title, part = 0, vts_ttn;
     var found;
@@ -621,7 +626,7 @@ class VM {
 
     if (!found) {
       console.error('jsdvdnav: Chapter not found!');
-      return false;
+      return null;
     }
 
     title = this.get_TT(this.state.vtsN, vts_ttn);
@@ -636,7 +641,7 @@ class VM {
       }
     }
 
-    return {
+    return <TitlePart>{
       title: title,
       part: part
     };
