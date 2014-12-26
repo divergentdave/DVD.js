@@ -6,3 +6,4 @@
 
 /// <reference path="declarations/BinaryParser.d.ts" />
 /// <reference path="declarations/connect.d.ts" />
+/// <reference path="declarations/jdataviewstatic.d.ts" />

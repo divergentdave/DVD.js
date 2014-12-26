@@ -8,7 +8,7 @@
 import fs = require('fs');
 import path = require('path');
 import glob = require('glob');
-import jDataView = require('jdataview');
+var jDataViewStatic: jDataView = require('jdataview');
 
 import ifoRead = require('../../dvdread/ifo_read');
 import dvdRead = require('../../dvdread/index');

@@ -3,9 +3,6 @@
 'use strict';
 
 
-interface jDataViewStatic {
-  new (buffer: jDataView.Bytes, offset?: number, length?: number, litleEndian?: boolean);
-}
 var jDataViewStatic: jDataView = require('jdataview');
 
 import navTypes = require('../dvdread/nav_types');
