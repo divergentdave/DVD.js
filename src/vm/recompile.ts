@@ -3,7 +3,7 @@
 'use strict';
 
 
-import VM = require('../vm');
+var VM = require('../vm');
 import utils = require('../utils');
 
 var sprintf = utils.sprintf;

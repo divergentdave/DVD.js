@@ -10,7 +10,7 @@ import dvdTypes = require('../dvdnav/dvd_types');
 import dvdEvents = require('../dvdnav/dvdnav_events');
 import config = require('../config');
 import utils = require('../utils');
-import EventEmitter = require('../../../bower_components/eventEmitter/EventEmitter.min.js');
+var EventEmitter: any = require('../../../bower_components/eventEmitter/EventEmitter.min.js');
 
 var LOG_DEBUG = config.DEBUG;
 var DVDDomain_t = dvdTypes.DVDDomain_t;
