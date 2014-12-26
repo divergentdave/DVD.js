@@ -48,7 +48,6 @@ module.exports = function(grunt) {
       refresh: {
         options: {
           command: 'reinstall',
-          latest: true,
           overwrite: true,
           config: './tsd.json'
         }
