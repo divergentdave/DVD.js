@@ -35,7 +35,7 @@ export = dvdnav;
  * @param {HTMLVideoElement} screen A video element.
  * @return {dvdnav}
  */
-function dvdnav(screen) {
+function dvdnav(screen): void {
   if (!(this instanceof dvdnav)) return new dvdnav(screen);
 
   // Not in original code:
