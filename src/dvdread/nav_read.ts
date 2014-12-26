@@ -3,7 +3,10 @@
 'use strict';
 
 
-import jDataView = require('jdataview');
+interface jDataViewStatic {
+  new (buffer: jDataView.Bytes, offset?: number, length?: number, litleEndian?: boolean);
+}
+var jDataViewStatic: jDataView = require('jdataview');
 
 import navTypes = require('../dvdread/nav_types');
 import BinaryParser = require('../lib/binaryParser/index');
