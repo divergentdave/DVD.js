@@ -13,14 +13,13 @@ interface vmProceduresInterface { (): void; }
 declare var init: vmProceduresInterface;
 declare var fp_pgc: vmProceduresInterface;
 
-var list = '<ul>' +
+var listTpl = _.template('<ul>' +
   '<% _.each(dvds, function(dvd) {%>' +
   '<li class="thumbnail" style="background-image:url(\'<%= dvd.dir %>/cover.jpg\');">' +
   '<a href="#/play/<%= dvd.dir %>"><span><%= dvd.name %></span></a>' +
-  '<%= name %>' +
   '</li>' +
   '<% }); %>' +
-  '</ul>';
+  '</ul>');
 
 class App extends Backbone.Router {
   public static routes = {
@@ -33,7 +32,7 @@ class App extends Backbone.Router {
         data = data.sort(function(a, b) {
           return a.name > b.name;
         });
-        $('.video-container').html(_.template(list, {dvds: data}));
+        $('.video-container').html(listTpl({dvds: data}));
       });
   }
   play(dvdId: string) {
