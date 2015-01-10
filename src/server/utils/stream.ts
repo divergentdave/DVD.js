@@ -13,7 +13,9 @@ class Stream {
   private client: boolean = false;
   private view: DataView;
 
-  constructor(private buffer: Buffer) {
+  constructor(buffer: ArrayBuffer);
+  constructor(buffer: Buffer);
+  constructor(private buffer: any) {
     if (buffer instanceof ArrayBuffer) {
       // Node.js
       this.client = true;
