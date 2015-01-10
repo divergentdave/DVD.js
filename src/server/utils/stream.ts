@@ -62,10 +62,11 @@ class Stream {
 
   // The `read...` methods increase the pointer.
   readUint8() {
+    var value: number;
     if (this.client) {
-      var value = this.view.getUint8(this.pos);
+      value = this.view.getUint8(this.pos);
     } else {
-      var value = this.buffer.readUInt8(this.pos);
+      value = this.buffer.readUInt8(this.pos);
     }
 
     this.pos++;
@@ -73,10 +74,11 @@ class Stream {
   }
 
   readUint16() {
+    var value: number;
     if (this.client) {
-      var value = this.view.getUint16(this.pos, false);
+      value = this.view.getUint16(this.pos, false);
     } else {
-      var value = this.buffer.readUInt16BE(this.pos);
+      value = this.buffer.readUInt16BE(this.pos);
     }
 
     this.pos += 2;
@@ -84,10 +86,11 @@ class Stream {
   }
 
   readUint32() {
+    var value: number;
     if (this.client) {
-      var value = this.view.getUint32(this.pos, false);
+      value = this.view.getUint32(this.pos, false);
     } else {
-      var value = this.buffer.readUInt32BE(this.pos);
+      value = this.buffer.readUInt32BE(this.pos);
     }
 
     this.pos += 4;
