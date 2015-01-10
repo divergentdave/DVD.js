@@ -13,7 +13,7 @@ import _ = require('lodash');
 export = editMetadataFile;
 
 function editMetadataFile(file, value, callback) {
-  var content = [];
+  var content: any = [];
   // We check if the file exists.
   fs.exists(file, function(exists) {
     if (exists) {
