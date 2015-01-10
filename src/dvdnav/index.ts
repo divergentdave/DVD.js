@@ -1,4 +1,4 @@
-///<reference path='../declarations/EventEmitter.d.ts'/>
+///<reference path='../references.ts'/>
 
 'use strict';
 
