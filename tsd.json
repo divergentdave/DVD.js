@@ -6,31 +6,31 @@
   "bundle": "typings/tsd.d.ts",
   "installed": {
     "backbone/backbone.d.ts": {
-      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+      "commit": "5deca4baf3c8ef7abbc919671acb95be27560667"
     },
     "jquery/jquery.d.ts": {
-      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+      "commit": "5deca4baf3c8ef7abbc919671acb95be27560667"
     },
     "underscore/underscore.d.ts": {
-      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+      "commit": "5deca4baf3c8ef7abbc919671acb95be27560667"
     },
     "node/node.d.ts": {
-      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+      "commit": "5deca4baf3c8ef7abbc919671acb95be27560667"
     },
     "jdataview/jdataview.d.ts": {
-      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+      "commit": "5deca4baf3c8ef7abbc919671acb95be27560667"
     },
     "glob/glob.d.ts": {
-      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+      "commit": "5deca4baf3c8ef7abbc919671acb95be27560667"
     },
     "optimist/optimist.d.ts": {
-      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+      "commit": "5deca4baf3c8ef7abbc919671acb95be27560667"
     },
     "minimatch/minimatch.d.ts": {
-      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+      "commit": "5deca4baf3c8ef7abbc919671acb95be27560667"
     },
     "lodash/lodash.d.ts": {
-      "commit": "c8f3fe257908ae25fde1f1f27139716a3e95c92a"
+      "commit": "5deca4baf3c8ef7abbc919671acb95be27560667"
     }
   }
 }
