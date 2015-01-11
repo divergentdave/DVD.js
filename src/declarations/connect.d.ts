@@ -1,4 +1,4 @@
-/// <reference path="../../typings/node/node.d.ts" />
+/// <reference path="node/node.d.ts" />
 
 declare module "connect" {
 	import events = require("events");

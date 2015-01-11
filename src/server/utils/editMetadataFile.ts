@@ -1,7 +1,7 @@
 // Create or append data to a metadata file formatted in JSON.
 
 /// <reference path="../../references.ts" />
-/// <reference path="../../../typings/lodash/lodash.d.ts" />
+/// <reference path="../../declarations/lodash/lodash.d.ts" />
 
 'use strict';
 

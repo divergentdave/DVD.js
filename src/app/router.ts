@@ -1,8 +1,8 @@
 /* global Backbone, $, init, fp_pgc */
 
 /// <reference path="../references.ts" />
-/// <reference path="../../typings/underscore/underscore.d.ts" />
-/// <reference path="../../typings/backbone/backbone.d.ts" />
+/// <reference path="../declarations/underscore/underscore.d.ts" />
+/// <reference path="../declarations/backbone/backbone.d.ts" />
 
 'use strict';
 
