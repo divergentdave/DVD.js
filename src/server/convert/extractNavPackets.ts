@@ -6,7 +6,7 @@
 import fs = require('fs');
 import path = require('path');
 import glob = require('glob');
-var jDataViewStatic: jDataView = require('jdataview');
+var jDataView: jDataViewStatic = require('jdataview');
 
 import Stream = require('../../server/utils/stream');
 import decodePacket = require('../../server/utils/decode_packet');
