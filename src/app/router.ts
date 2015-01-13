@@ -22,9 +22,13 @@ var listTpl = _.template('<ul>' +
   '</ul>');
 
 class App extends Backbone.Router {
-  public static routes = {
-    'play': 'list',
-    'play/:dvdId': 'play'
+  routes: any;
+  constructor(options?: Backbone.RouterOptions) {
+    this.routes = {
+      'play': 'list',
+      'play/:dvdId': 'play'
+    };
+    super(options);
   }
   list() {
     $.getJSON('/dvds.json')
